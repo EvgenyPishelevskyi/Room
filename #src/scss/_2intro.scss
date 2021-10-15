@@ -1,0 +1,88 @@
+.intro {
+   padding: 0px 0px 208px 0px;
+
+   @media (max-width: $md1 +px) {
+      padding: 0px 0px 50px 0px;
+   }
+}
+
+.intro__container {
+   padding: 0px 57px;
+
+   @media (max-width: $md2 + px) {
+      padding: 0px 0px 0px 0px;
+   }
+}
+
+.intro__bg {
+   margin-bottom: 82px;
+   background-image: url('../img/intro/bg.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   height: 745px;
+
+   @media (max-width: $md1 + px) {
+      background-position: -50px 0px;
+      height: 645px;
+   }
+
+   @media (max-width: $md2 + px) {
+      background-position: -200px 0px;
+   }
+
+   @media (max-width: $md3 + px) {
+      background-position: -350px 0px;
+   }
+
+   @media (max-width: $md3-5 + px) {
+      margin-bottom: 32px;
+   }
+
+   @media (max-width: $md4 + px) {
+      background-position: -10px 0px;
+      height: 500px;
+   }
+}
+
+.intro__info {
+   padding: 0px 70px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   @media (max-width: $md2 + px) {
+      padding: 0px 20px;
+   }
+
+   @media (max-width: $md3-5 + px) {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   h1 {
+      width: 37%;
+      @include adaptive-font (48, 16);
+      line-height: calc(58 / 48);
+      color: $blackColor;
+
+      @media (max-width: $md3-5 + px) {
+         padding: 0px 0px 20px 0px;
+         display:block;
+         margin:0 auto;
+         width: 70%;
+      }
+   }
+
+   p {
+      padding: 10px 0px 0px 0px;
+      width: 54.8%;
+      @include adaptive-font (24, 16);
+      line-height: calc(40 / 24);
+
+      @media (max-width: $md3-5 + px) {
+         width: 100%;
+         padding: 0px 0px 0px 0px;
+      }
+   }
+}
