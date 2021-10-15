@@ -36,6 +36,8 @@ gulp.task('deploy', function() {
 	  .pipe(ghPages());
  });
 
+
+
 let path = {
 	build: {
 		html: project_name + "/",
