@@ -2,6 +2,7 @@
 let { src, dest } = require("gulp");
 let fs = require('fs');
 let gulp = require("gulp");
+var ghPages = require('gulp-gh-pages');
 let browsersync = require("browser-sync").create();
 let autoprefixer = require("gulp-autoprefixer");
 let scss = require('gulp-sass')(require('sass'));
@@ -26,8 +27,14 @@ let fonter = require('gulp-fonter');
 let ttf2woff = require('gulp-ttf2woff');
 let ttf2woff2 = require('gulp-ttf2woff2');
 
-let project_name = require("path").basename(__dirname);
+let project_name = ('test');
 let src_folder = "#src";
+
+
+gulp.task('deploy', function() {
+	return gulp.src('./test/**/*')
+	  .pipe(ghPages());
+ });
 
 let path = {
 	build: {
