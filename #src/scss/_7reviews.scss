@@ -7,11 +7,11 @@
 }
 
 .reviews__container {
-  padding: 0px 50px;
+   padding: 0px 50px;
 
-  @media (max-width: $md2 +px) {
-   padding: 0px;
-}
+   @media (max-width: $md2 +px) {
+      padding: 0px;
+   }
 }
 
 .reviews__bg {
@@ -23,7 +23,7 @@
 }
 
 ._bg__items {
-   background-image: url('../img/reviews/Rectangle.png');
+   background-image: url('../img/reviews/Rectangle.webp');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -55,7 +55,7 @@
       }
 
       .brend {
-         display:block;
+         display: block;
          margin: 0px 0px 6px 8px;
       }
    }
