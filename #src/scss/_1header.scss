@@ -9,29 +9,27 @@
    div {
       padding: 0px 52px;
 
-      @media (max-width: $md4 + px) {
+      @media (max-width: ($md4 + px)) {
          padding: 0px 20px;
       }
 
-      ul {
-         display: flex;
-         align-items: center;
-         justify-content: flex-end;
+      .header-top__list {
+         @include center-end;
 
-         li {
+         .top-list__item {
             margin-right: 27px;
 
             &:last-child {
                margin-right: 0px;
             }
 
-            a {
+            .top-list__link {
                font-size: 12px;
                line-height: 33px;
                letter-spacing: 1px;
                text-transform: uppercase;
 
-               span {
+               .link__tel {
                   margin-right: 3px;
                }
             }
@@ -44,7 +42,7 @@
    padding: 0px 30px 0px 120px;
    border-bottom: 1px solid rgba(224, 224, 224, 1);
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 50px;
    }
 }
@@ -57,10 +55,9 @@
 
 .header__bottom {
    padding: 25px 0px;
-   display: flex;
-   align-items: center;
+   @include center;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       justify-content: space-around;
    }
 
@@ -69,53 +66,51 @@
    }
 }
 
-.header__list {
-   display: flex;
+.header-bottom__list {
+   @include center;
    flex: 0 1 83%;
-   justify-content: center;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width:($md2 +px)) {
       display: none;
-   }
-
-   li {
-      margin-right: 111px;
-
-      &:last-child {
-         margin-right: 0px;
-      }
-
-      a {
-         font-size: 12px;
-         line-height: 14px;
-         letter-spacing: 2px;
-         color: $blackColor;
-         text-transform: uppercase;
-         transition: all 0.3s ease;
-
-         &:hover {
-            padding: 0px 0px 10px 0px;
-            border-bottom: solid 3px #46856E;
-            transform: scaleX(2);
-         }
-      }
    }
 }
 
+.bottom-list__item {
+   margin-right: 111px;
+
+   &:last-child {
+      margin-right: 0px;
+   }
+}
+
+.bottom-list__link {
+   font-size: 12px;
+   line-height: 14px;
+   letter-spacing: 2px;
+   color: $blackColor;
+   text-transform: uppercase;
+   transition: all 0.3s ease;
+
+   &:hover {
+      padding: 0px 0px 10px 0px;
+      border-bottom: solid 3px #46856E;
+      transform: scaleX(2);
+   }
+}
+
+
 .header__icons {
-   display: flex;
-   justify-content: flex-end;
+   @include center-end;
    flex: 0 1 30%;
 
-   @media (max-width: $md3-5 + px) {
+   @media (max-width: ($md3-5 + px)) {
       display: none;
    }
 }
 
 ._icons-header__geo {
    margin-right: 46px;
-   display: flex;
-   align-items: center;
+   @include center;
    cursor: pointer;
    transition: all 0.3s ease;
 
@@ -127,11 +122,7 @@
    }
 
    ._geo__title {
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      transition: all 0.3s ease;
+      color: $mainColor;
    }
 }
 

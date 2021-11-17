@@ -4,62 +4,10 @@
 .slider2 {
    padding: 0px 0px 282px 0px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 80px 0px;
    }
 }
-
-/* Слайдер запущен */
-.slick-slider.slick-initialized {}
-
-/* Слайдер с точками */
-.slick-slider.slick-dotted {}
-
-/* Ограничивающая оболочка */
-.slick-list {}
-
-/* Лента слайдов */
-.slick-track {}
-
-/* Слайд */
-.slick-slide {}
-
-/* Слайд активный (показывается) */
-.slick-slide.slick-active {}
-
-/* Слайд основной */
-.slick-slide.slick-current {}
-
-/* Слайд по центру */
-.slick-slide.slick-center {}
-
-/* Клонированный слайд */
-.slick-slide.slick-cloned {}
-
-/* Стрелка */
-.slick-arrow {}
-
-/* Стрелка влево */
-.slick-arrow.slick-prev {}
-
-/* Стрелка вправо */
-.slick-arrow.slick-next {}
-
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {}
-
-/* Точки (булиты) */
-.slick-dots {}
-
-.slick-dots li {}
-
-/* Активная точка */
-.slick-dots li.slick-active {}
-
-/* Элемент точки */
-.slick-dots li button {}
-
-/*Конкретный слайдер*/
 
 .slider-2 {
    padding: 0px 0px 0px 0px;
@@ -111,5 +59,4 @@
 .slider-2 .slick-arrow.slick-next {
    right: 7%;
    background-image: url('../img/slider1/right.png');
-
 }

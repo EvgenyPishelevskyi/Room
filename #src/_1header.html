@@ -1,10 +1,10 @@
 <header class="header">
-	<div class="header__top">
+	<div class="header__top header-top">
 		<div>
-			<ul>
-				<li><a href="">Contact Sales</a></li>
-				<li><a href="tel:6467913726"><span>TEL</span> 646-791-3726</a></li>
-				<li><a href="">US</a></li>
+			<ul class="header-top__list top-list">
+				<li class="top-list__item"><a href="" class="top-list__link">Contact Sales</a></li>
+				<li class="top-list__item"><a href="tel:6467913726" class="top-list__link link"><span class="link__tel">TEL</span> 646-791-3726</a></li>
+				<li class="top-list__item"><a href="" class="top-list__link">US</a></li>
 			</ul>
 		</div>
 	</div>
@@ -16,16 +16,16 @@
 				</div>
 			</div>
 			@@include('_burger.html',{})
-			<ul class="header__list">
-				<li><a href="">Products</a></li>
-				<li><a href="">Explore</a></li>
-				<li><a href="">Shop</a></li>
+			<ul class="header-bottom__list bottom-list">
+				<li class="bottom-list__item"><a href="" class="bottom-list__link">Products</a></li>
+				<li class="bottom-list__item"><a href="" class="bottom-list__link">Explore</a></li>
+				<li class="bottom-list__item"><a href="" class="bottom-list__link">Shop</a></li>
 			</ul>
 			<div class="header__icons _icons-header">
 				<div class="_icons-header__geo _geo">
 					<div><span class="_icon-geo">
 					</span></div>
-					<div><span class="_geo__title">Showrooms</span></div>
+					<div><span class=" _geo__title bottom-list__link ">Showrooms</span></div>
 				</div>
 				<div class="_icons-header__basket">
 					<span class="_icon-basket"></span>

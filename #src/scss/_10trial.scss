@@ -5,7 +5,7 @@
 .trial__container {
    padding: 0px 20px 0px 20px;
 
-   @media (max-width: $md3 + px) {
+   @media (max-width: ($md3 + px)) {
       padding: 0px 0px 0px 0px;
    }
 }
@@ -16,7 +16,7 @@
    border-radius: 2px;
    text-align: center;
 
-   h4 {
+   .trial-wrapper__title {
       padding: 0px 0px 68px 0px;
       display: block;
       @include adaptive-font (46, 16);
@@ -27,26 +27,23 @@
 
 .trial__items {
    padding: 0px 0px 64px 0px;
-   display: flex;
-   justify-content: center;
+   @include center;
 
-   @media (max-width: $md3 + px) {
+   @media (max-width: ($md3 + px)) {
       justify-content: space-between;
    }
 }
 
 ._item {
    flex: 0 1 22.9%;
-   display: flex;
-   flex-direction: column;
+   @include column-center;
    transition: all 0.3s ease;
-
 
    &:hover {
       color: #46856E;
    }
 
-   p {
+   ._item__name {
       font-size: 12px;
       line-height: 14px;
       letter-spacing: 0.75px;
@@ -56,7 +53,7 @@
 .trial__button {
    padding: 0px 0px 21px 0px;
 
-   a {
+   .trial-btn__link {
       padding: 18px 33px;
       font-size: 12px;
       line-height: 60px;

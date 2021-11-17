@@ -1,7 +1,7 @@
 .reviews {
    padding: 0px 0px 240px 0px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 80px 0px;
    }
 }
@@ -9,68 +9,64 @@
 .reviews__container {
    padding: 0px 50px;
 
-   @media (max-width: $md2 +px) {
-      padding: 0px;
+   @media (max-width: ($md2 +px)) {
+      padding: 0px 0px 0px 0px;
    }
 }
 
 .reviews__bg {
    padding: 120px 0px 40px 185px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 120px 0px 40px 20px;
    }
 }
 
 ._bg__items {
    background-image: url('../img/reviews/Rectangle.webp');
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-size: cover;
+   @include background-image;
    height: 800px;
+}
 
+._bg__item {
+   margin-bottom: 39px;
 
-   ._bg__item {
-      margin-bottom: 39px;
-
-      &:last-child {
-         margin-bottom: 0px;
-      }
-
-      .stars {
-         margin: 0px 0px 9px 8px;
-      }
-
-      span {
-         display: inline-block;
-         margin: 0px 0px 6px 0px;
-         width: 23%;
-         @include adaptive-font (24, 16);
-         line-height: calc(32 / 24);
-         color: $whiteColor;
-
-         @media (max-width: $md2 +px) {
-            width: 45%;
-         }
-      }
-
-      .brend {
-         display: block;
-         margin: 0px 0px 6px 8px;
-      }
+   &:last-child {
+      margin-bottom: 0px;
    }
 }
 
+.item__stars {
+   margin: 0px 0px 9px 8px;
+}
+
+.item__slogan {
+   display: inline-block;
+   margin: 0px 0px 6px 0px;
+   width: 23%;
+   @include adaptive-font (24, 16);
+   line-height: calc(32 / 24);
+   color: $whiteColor;
+
+   @media (max-width:($md2 +px)) {
+      width: 45%;
+   }
+}
+
+.brend {
+   display: block;
+   margin: 0px 0px 6px 8px;
+}
 
 ._bg__slogan {
-   display: inline-block;
    padding: 0px 0px 0px 195px;
+   display: inline-block;
    @include adaptive-font (16, 16);
    line-height: calc(12 / 16);
    letter-spacing: 0.75px;
    color: $whiteColor;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 0px 35px;
    }
 }

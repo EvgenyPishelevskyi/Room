@@ -6,13 +6,13 @@ footer {
 }
 
 .footer__container {
-   max-width: 1195px;
-   margin: 0 auto;
    padding: 0px 50px;
+   margin: 0 auto;
+   max-width: 1195px;
    display: flex;
    justify-content: space-between;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 20px;
       flex-direction: column;
    }
@@ -21,7 +21,7 @@ footer {
 .footer__logo {
    flex: 0 1 8%;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 50px 0px;
    }
 }
@@ -32,17 +32,16 @@ footer {
    grid-template-columns: 163px 163px;
    grid-row-gap: 28px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 50px 0px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
    }
 
-
    ul {
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          width: 50%;
       }
 
@@ -50,14 +49,14 @@ footer {
          margin-bottom: 19px;
       }
 
-      li {
+      .footer-lists__item {
          margin-bottom: 4px;
 
          &:last-child {
             margin-bottom: 0px;
          }
 
-         a {
+         .footer-lists__link {
             font-family: Roboto;
             line-height: 16px;
             letter-spacing: 0.5px;
@@ -74,14 +73,14 @@ footer {
 .footer__social {
    flex: 0 1 11%;
 
-   p {
+   .footer-social__name {
       margin-bottom: 17px;
    }
 
-   ul {
+   .footer-social__list {
       display: flex;
 
-      li {
+      .social-list__item {
          margin-right: 13px;
 
          &:last-child {
@@ -92,9 +91,9 @@ footer {
 
    .fab {
       font-size: 20px;
-      transition:all 0.3s ease;
+      transition: all 0.3s ease;
 
-      &:hover{
+      &:hover {
          color: #46856E;
       }
    }
@@ -103,16 +102,16 @@ footer {
 .footer__sign {
    flex: 0 1 20%;
 
-   div {
-      span {
-         display: block;
+   .footer-sign__info {
+      .sign-info__joi {
          padding: 0px 0px 17px 0px;
+         display: block;
          font-size: 13px;
          line-height: 21px;
          letter-spacing: 0.5px;
       }
 
-      p {
+      .sign-info__descr {
          padding: 0px 0px 30px 0px;
          font-size: 14px;
          line-height: 16px;
@@ -123,11 +122,11 @@ footer {
       padding: 0px 0px 56px 0px;
       text-align: right;
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          text-align: left;
       }
 
-      div {
+      .form__input {
          input {
             margin: 0px 0px 16px 0px;
             width: 327px;
@@ -136,15 +135,12 @@ footer {
             border: 1px solid rgba(255, 255, 255, 0.4);
             box-sizing: border-box;
             border-radius: 3px;
-            transition:all 0.3s ease;
+            transition: all 0.3s ease;
 
-            &:hover{
+            &:hover {
                background-color: $whiteColor;
             }
-
-
          }
-
       }
 
       option {
@@ -156,22 +152,18 @@ footer {
 .footer__check {
    display: flex;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       display: block;
-   }
-
-   input {
-      margin-right: 20px;
    }
 
    .check__text {
       font-size: 11px;
       line-height: 13px;
-      letter-spacing: 2.4000000953674316px;
+      letter-spacing: 2.4px;
       text-align: left;
       text-transform: uppercase;
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          width: 100%;
       }
    }
@@ -181,12 +173,12 @@ footer {
    display: block;
    font-size: 14px;
    line-height: 60px;
-   letter-spacing: 2.299999952316284px;
+   letter-spacing: 2.3px;
    text-align: right;
    color: $whiteColor;
    text-transform: uppercase;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       text-align: left;
    }
 

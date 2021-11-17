@@ -1,8 +1,8 @@
 .advantages {
    padding: 0px 0px 236px 0px;
 
-   @media (max-width: $md2 +px) {
-     padding: 0px 0px 100px 0px;
+   @media (max-width: ($md2 +px)) {
+      padding: 0px 0px 100px 0px;
    }
 
 }
@@ -10,7 +10,7 @@
 .advantages__container {
    padding: 0px 70px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 20px;
    }
 }
@@ -19,14 +19,14 @@
    padding: 0px 0px 70px 0px;
    text-align: left;
 
-   p {
+   ._info__descr {
       padding: 0px 0px 24px 0px;
       @include adaptive-font (48, 16);
       line-height: calc(56 / 48);
       color: $blackColor;
    }
 
-   span {
+   ._info__slogan {
       font-size: 14px;
       line-height: 12px;
       letter-spacing: 0.75px;
@@ -36,31 +36,29 @@
 ._info__advantages {
    display: flex;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       flex-direction: column;
    }
 }
-
 
 ._advantages__item {
    display: flex;
    flex-direction: column;
    flex: 0 1 33.3%;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 10px;
       margin-bottom: 25px;
-      justify-content: center;
-      align-items: center;
+      @include center;
       box-shadow: 0px 0px 30px #46856E;
 
-      &:last-child{
+      &:last-child {
          margin-bottom: 0px;
       }
    }
 
 
-   h4 {
+   .advantages-item__title {
       margin-bottom: 18px;
       display: block;
       @include adaptive-font (24, 16);
@@ -69,12 +67,12 @@
       text-align: left
    }
 
-   p {
+   .advantages-item__text {
       width: 87%;
       @include adaptive-font (16, 16);
       line-height: calc(24 / 16);
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          width: 100%;
          text-align: center;
       }
